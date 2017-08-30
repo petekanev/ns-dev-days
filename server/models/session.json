@@ -1,0 +1,62 @@
+{
+  "name": "session",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lecturer": {
+      "type": [ "string" ],
+      "required": false
+    },
+    "time": {
+      "type": "date",
+      "required": true
+    },
+    "length": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "get": {
+      "accepts": [
+        {
+          "arg": "sessionId",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "session",
+        "type": "object"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getAll": {
+      "accepts": [],
+      "returns": {
+        "arg": "sessions",
+        "type": "object[]"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
