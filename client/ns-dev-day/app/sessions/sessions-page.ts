@@ -3,7 +3,7 @@ import { RadSideDrawer } from "nativescript-telerik-ui/sidedrawer";
 import { topmost } from "ui/frame";
 import { NavigatedData, Page } from "ui/page";
 
-import { SearchViewModel } from "./search-view-model";
+import { SessionsViewModel } from "./sessions-view-model";
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -19,7 +19,7 @@ export function onNavigatingTo(args: NavigatedData) {
     }
 
     const page = <Page>args.object;
-    page.bindingContext = new SearchViewModel();
+    page.bindingContext = new SessionsViewModel();
 }
 
 /* ***********************************************************

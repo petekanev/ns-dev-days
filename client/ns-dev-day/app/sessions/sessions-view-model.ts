@@ -1,6 +1,6 @@
 import { Observable } from "data/observable";
 
-export class SearchViewModel extends Observable {
+export class SessionsViewModel extends Observable {
     constructor() {
         super();
     }

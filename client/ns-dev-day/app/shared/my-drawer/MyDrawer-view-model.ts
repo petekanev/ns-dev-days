@@ -22,34 +22,34 @@ export class MyDrawerViewModel extends Observable {
                 icon: "\uf015",
                 isSelected: selectedPage === "Home"
             },
+            // {
+            //     title: "Browse",
+            //     name: "browse",
+            //     route: "browse/browse-page",
+            //     icon: "\uf1ea",
+            //     isSelected: selectedPage === "Browse"
+            // },
             {
-                title: "Browse",
-                name: "browse",
-                route: "browse/browse-page",
-                icon: "\uf1ea",
-                isSelected: selectedPage === "Browse"
-            },
-            {
-                title: "Search",
-                name: "search",
-                route: "search/search-page",
-                icon: "\uf002",
+                title: "Sessions",
+                name: "sessions",
+                route: "sessions/sessions-page",
+                icon: "\uf19d",
                 isSelected: selectedPage === "Search"
             },
             {
-                title: "Featured",
+                title: "Speakers",
                 name: "featured",
                 route: "featured/featured-page",
                 icon: "\uf005",
                 isSelected: selectedPage === "Featured"
             },
-            {
-                title: "Settings",
-                name: "settings",
-                route: "settings/settings-page",
-                icon: "\uf013",
-                isSelected: selectedPage === "Settings"
-            }
+            // {
+            //     title: "Settings",
+            //     name: "settings",
+            //     route: "settings/settings-page",
+            //     icon: "\uf013",
+            //     isSelected: selectedPage === "Settings"
+            // }
         ];
     }
 
