@@ -54,6 +54,15 @@
     border-width: 3
 }
 
+.session-widget {
+    height: 70;
+    width: 100%;
+    margin-bottom: 2;
+    horizontal-align: center;
+    text-align: left;
+    border-bottom-width: 2;
+}
+
 /* Action bar*/
 ActionBar .action-bar-title {
     horizontal-align: center;
