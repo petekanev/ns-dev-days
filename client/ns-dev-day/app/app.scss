@@ -41,6 +41,17 @@
     }
 }
 
+.countdown-widget {
+    vertical-align: top;
+    horizontal-align: center;
+    font-size: 40;
+    color: $night-dark;
+    margin-top: 30%;
+    border-color: blueviolet;
+    border-radius: 15;
+    border-width: 3
+}
+
 /* Action bar*/
 ActionBar .action-bar-title {
     horizontal-align: center;

@@ -11,7 +11,7 @@ export class HomeViewModel extends Observable {
         const difference = Math.abs(toDate.getTime() - currentDate.getTime());
 
         const updateCountDown = (countdown) => {
-            this.set("countdown", countdown);
+            this.set("countdown", millisecondsToReadableTime(countdown));
         }
 
         if (global.android) {
@@ -21,6 +21,15 @@ export class HomeViewModel extends Observable {
     }
 }
 
+function millisecondsToReadableTime(milliseconds: number) {
+    const seconds = Math.floor((milliseconds / 1000) % 60);
+    const minutes = Math.floor((milliseconds / (1000 * 60)) % 60);
+    const hours = (milliseconds / (1000 * 60 * 60));
+    const readableHours = Math.floor(hours % 24);
+    const days = Math.floor(hours / 24);
+    
+    return `${days} days, ${readableHours}:${minutes}:${seconds}`;
+}
 
 let CountDownTimerClass;
 function ensureCountDownTimer() {
