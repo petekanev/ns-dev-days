@@ -3,12 +3,33 @@ import { Label } from "ui/label";
 
 export class HomeViewModel extends Observable {
     public countdown: string = "N/A";
+    public announcement: string = "NativeScript DeveloperDay is almost here!";
+    public countdownClass: string = "no-countdown";
+
     private countDownComponent: android.os.CountDownTimer;
     constructor() {
         super();
         const toDate = new Date("2017-09-18T08:30:00-04:00");
+        const endDate = new Date("2017-09-19T19:00:00-04:00");
         const currentDate = new Date();
-        const difference = Math.abs(toDate.getTime() - currentDate.getTime());
+        const difference = toDate.getTime() - currentDate.getTime();
+        const isOver = (currentDate.getTime() - endDate.getTime()) > 0;
+
+        if (isOver) {
+            this.set("countdown", "DeveloperDay is over :-(");
+            this.set("announcement", "We'll see you again next year!");
+
+            return;
+        }
+
+        if (difference < 0) {
+            this.set("countdown", "DeveloperDay is here!");
+            this.set("announcement", "Open the side panel to browse sessions.");
+            
+            return;
+        }
+
+        this.set("countdownClass", "countdown-widget");
 
         const updateCountDown = (countdown) => {
             this.set("countdown", millisecondsToReadableTime(countdown));
@@ -22,13 +43,17 @@ export class HomeViewModel extends Observable {
 }
 
 function millisecondsToReadableTime(milliseconds: number) {
-    const seconds = Math.floor((milliseconds / 1000) % 60);
-    const minutes = Math.floor((milliseconds / (1000 * 60)) % 60);
+    let seconds: number | string = Math.floor((milliseconds / 1000) % 60);
+    seconds = seconds > 9 ? seconds : "0" + seconds;
+    let minutes: number | string = Math.floor((milliseconds / (1000 * 60)) % 60);
+    minutes = minutes > 9 ? minutes : "0" + minutes;
     const hours = (milliseconds / (1000 * 60 * 60));
-    const readableHours = Math.floor(hours % 24);
-    const days = Math.floor(hours / 24);
+    let readableHours: number | string = Math.floor(hours % 24);
+    readableHours = readableHours > 9 ? readableHours : "0" + readableHours;
+    let days: number | string = Math.floor(hours / 24);
+    days = days > 1 ? `${days} days` : "1 day";
     
-    return `${days} days, ${readableHours}:${minutes}:${seconds}`;
+    return `${days}, ${readableHours}:${minutes}:${seconds}`;
 }
 
 let CountDownTimerClass;

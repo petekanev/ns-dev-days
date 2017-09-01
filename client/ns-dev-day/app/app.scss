@@ -54,6 +54,17 @@
     border-width: 3
 }
 
+.no-countdown {
+    vertical-align: top;
+    horizontal-align: center;
+    text-align: center;
+    font-size: 30;
+    color: $blue-light;
+    margin-top: 30%;
+    width: 80%;
+    font-weight: bold;
+}
+
 .session-widget {
     height: 70;
     width: 100%;
