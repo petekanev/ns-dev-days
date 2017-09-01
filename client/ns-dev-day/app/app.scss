@@ -94,5 +94,34 @@
 /* Action bar*/
 ActionBar .action-bar-title {
     horizontal-align: center;
+    text-transform: capitalize;
 }
 
+.session-details-title {
+    font-size: 18;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10;
+}
+
+.session-details-description {
+    font-size: 15;
+    font-weight: bold;
+    margin-top: 10;
+    line-height: 4;
+}
+
+.session-details-speakers {
+    font-size: 13;
+    margin-top: 10;
+    margin-left: 15%;
+    line-height: 15;
+    
+    Label {
+        margin-bottom: 5;
+    }
+}
+
+.session-details-content {
+    padding: 10;
+}

@@ -5,6 +5,8 @@ import { NavigatedData, Page } from "ui/page";
 
 import { SessionViewModel } from "./session-view-model";
 
+let viewModel: SessionViewModel;
+
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
 *************************************************************/
@@ -19,7 +21,12 @@ export function onNavigatingTo(args: NavigatedData) {
     }
 
     const page = <Page>args.object;
-    page.bindingContext = new SessionViewModel();
+    const sessionId = args.context.sessionId;
+    const sessionName = args.context.sessionName;
+    viewModel = new SessionViewModel(sessionId, sessionName);
+    page.bindingContext = viewModel;
+
+    const navContext = args.context;
 }
 
 /* ***********************************************************
@@ -28,6 +35,5 @@ export function onNavigatingTo(args: NavigatedData) {
 * use the showDrawer() function to open the app drawer section.
 *************************************************************/
 export function onDrawerButtonTap(args: EventData) {
-    const sideDrawer = <RadSideDrawer>topmost().getViewById("sideDrawer");
-    sideDrawer.showDrawer();
+    topmost().goBack();
 }

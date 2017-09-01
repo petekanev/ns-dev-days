@@ -16,11 +16,10 @@ export class SessionsViewModel extends Observable {
         this.sessionsList = new ObservableArray<SessionEntry>();
         const that = this;
         http.getJSON(WEB_SERVER_DOMAIN + "/getAll").then((res: any) => {
-            console.log(res);
             const jsonRes = JSON.parse(res.sessions)
             if (jsonRes.length > 0) {
                 jsonRes.forEach((element: any) => {
-                    that.sessionsList.push(new SessionEntry(element.name, new Date(element.time), element.length, element.speakers));
+                    that.sessionsList.push(new SessionEntry(element.id, element.name, new Date(element.time), element.length, element.speakers));
                 });
             }
         }, (err) => {
