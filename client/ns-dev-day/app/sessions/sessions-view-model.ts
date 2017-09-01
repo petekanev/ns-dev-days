@@ -1,6 +1,7 @@
 import { Observable } from "data/observable";
 import { ObservableArray } from "data/observable-array";
 import * as http from "http";
+import { SessionEntry } from "../shared/sessions/sessions-entry";
 
 const WEB_SERVER_DOMAIN = "http://10.0.2.2:3000/api/sessions"
 const monthsArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -25,21 +26,5 @@ export class SessionsViewModel extends Observable {
         }, (err) => {
             alert("Couldn't access web server: " + JSON.stringify(err));
         }).catch((rej) => { console.log("Rejected: " + rej) });
-    }
-}
-
-class SessionEntry {
-    public timeString: string;
-    public dayString: string;
-    public name: string;
-    public speakers: string[];
-    public duration: string;
-
-    constructor(name, time: Date, duration, speakers) {
-        this.name = name;
-        this.timeString = time.getHours() + ":" + (time.getMinutes() === 0 ? "00" : time.getMinutes());
-        this.dayString = time.getUTCDate() + " " + monthsArr[time.getUTCMonth()];
-        this.duration = duration + " mins";
-        this.speakers = speakers;
     }
 }

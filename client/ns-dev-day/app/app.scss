@@ -37,7 +37,20 @@
         vertical-align: top;
         horizontal-align: center;
         color: $page-icon-color;
-        margin-top: 20%;
+        margin-top: 25%;
+    }
+
+    .page-subtitle {
+        font-size: 18;
+        vertical-align: center;
+        padding-top: 15%;
+        horizontal-align: center;
+        text-align: center;
+
+        Label {
+            color: $accent-light;
+            margin-bottom: 8
+        }
     }
 }
 
@@ -47,11 +60,8 @@
     text-align: center;
     font-size: 35;
     color: $night-dark;
-    margin-top: 30%;
+    margin-top: 10%;
     width: 80%;
-    border-color: blueviolet;
-    border-radius: 15;
-    border-width: 3
 }
 
 .no-countdown {
@@ -72,6 +82,13 @@
     horizontal-align: center;
     text-align: left;
     border-bottom-width: 2;
+}
+
+.ns-background-nyc {
+    background-image: url('~/images/bgs/nyc.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Action bar*/

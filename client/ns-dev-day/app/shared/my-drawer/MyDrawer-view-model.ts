@@ -22,13 +22,6 @@ export class MyDrawerViewModel extends Observable {
                 icon: "\uf015",
                 isSelected: selectedPage === "Home"
             },
-            // {
-            //     title: "Browse",
-            //     name: "browse",
-            //     route: "browse/browse-page",
-            //     icon: "\uf1ea",
-            //     isSelected: selectedPage === "Browse"
-            // },
             {
                 title: "Sessions",
                 name: "sessions",
@@ -38,18 +31,32 @@ export class MyDrawerViewModel extends Observable {
             },
             {
                 title: "Speakers",
-                name: "featured",
-                route: "featured/featured-page",
-                icon: "\uf005",
-                isSelected: selectedPage === "Featured"
+                name: "speakers",
+                route: "speakers/speakers-page",
+                icon: "\uf007",
+                isSelected: selectedPage === "Speakers"
             },
-            // {
-            //     title: "Settings",
-            //     name: "settings",
-            //     route: "settings/settings-page",
-            //     icon: "\uf013",
-            //     isSelected: selectedPage === "Settings"
-            // }
+            {
+                title: "#NativeScript",
+                name: "tweets",
+                route: "tweets/tweets-page",
+                icon: "\uf099",
+                isSelected: selectedPage === "#NativeScript"
+            },
+            {
+                title: "Sponsors",
+                name: "sponsors",
+                route: "sponsors/sponsors-page",
+                icon: "\uf0a4",
+                isSelected: selectedPage === "Event Info"
+            },
+            {
+                title: "Event Info",
+                name: "info",
+                route: "info/info-page",
+                icon: "\uf129",
+                isSelected: selectedPage === "Event Info"
+            }
         ];
     }
 

@@ -3,14 +3,16 @@ import { Label } from "ui/label";
 
 export class HomeViewModel extends Observable {
     public countdown: string = "N/A";
-    public announcement: string = "NativeScript DeveloperDay is almost here!";
+    public announcement: string =  "SEPTEMBER 18-19, 2017 / NEW YORK CITY\n" +
+                "NATIVESCRIPT DEVELOPER DAY 2017\n" +
+                "JAVASCRIPT. MOBILE. NATIVE.";
     public countdownClass: string = "no-countdown";
 
     private countDownComponent: android.os.CountDownTimer;
     constructor() {
         super();
         const toDate = new Date("2017-09-18T08:30:00-04:00");
-        const endDate = new Date("2017-09-19T19:00:00-04:00");
+        const endDate = new Date("2017-09-19T17:00:00-04:00");
         const currentDate = new Date();
         const difference = toDate.getTime() - currentDate.getTime();
         const isOver = (currentDate.getTime() - endDate.getTime()) > 0;
@@ -24,7 +26,6 @@ export class HomeViewModel extends Observable {
 
         if (difference < 0) {
             this.set("countdown", "DeveloperDay is here!");
-            this.set("announcement", "Open the side panel to browse sessions.");
             
             return;
         }
