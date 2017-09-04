@@ -9,7 +9,10 @@
         "id": 2,
         "name": "Opening Keynote",
         "speakers": [
-            "Todd Anglin"
+            {
+                "id": 2,
+                "name": "Todd Anglin"
+            }
         ],
         "time": "2017-09-18T09:30:00",
         "length": 60
@@ -18,7 +21,10 @@
         "id": 3,
         "name": "GETTING STARTED WITH {N} PART 1—LEARNING THE BASICS",
         "speakers": [
-            "Rob Lauer"
+            {
+                "id": 6,
+                "name": "Rob Lauer"
+            }
         ],
         "time": "2017-09-18T10:30:00",
         "length": 40,
@@ -28,7 +34,10 @@
         "id": 4,
         "name": "NATIVESCRIPT UI—BEYOND THE BASICS",
         "speakers": [
-            "TJ VanToll"
+            {
+                "id": 12,
+                "name": "TJ VanToll"
+            }
         ],
         "time": "2017-09-18T10:30:00",
         "length": 40,
@@ -38,8 +47,14 @@
         "id": 5,
         "name": "GETTING STARTED WITH {N} PART 2—BUILDING WITH THE {N} CLI AND VISUAL TOOLING",
         "speakers": [
-            "Rob Lauer",
-            "Sebastian Witalec"
+            {
+                "id": 6,
+                "name": "Rob Lauer"
+            },
+            {
+                "id": 16,
+                "name": "Sebastian Witalec"
+            }
         ],
         "time": "2017-09-18T11:20:00",
         "length": 40,
@@ -49,7 +64,10 @@
         "id": 6,
         "name": "3 WAYS TO MAKE YOUR APP SMARTER",
         "speakers": [
-            "Jen Looper"
+            {
+                "id": 8,
+                "name": "Jen Looper"
+            }
         ],
         "time": "2017-09-18T11:20:00",
         "length": 40,

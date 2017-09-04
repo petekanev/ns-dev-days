@@ -22,7 +22,7 @@ module.exports = function (Speaker) {
                     if (speaker) {
                         const speakerName = speaker.name.toLowerCase();
                         const speakerSessions = sessions.filter((session) => {
-                            return session.speakers ? session.speakers.map((speakerEntry) => speakerEntry.toLowerCase()).indexOf(speakerName) > -1 : false;
+                            return session.speakers ? session.speakers.map((speakerEntry) => speakerEntry.name.toLowerCase()).indexOf(speakerName) > -1 : false;
                         }).map((session) => {
                             return {
                                 id: session.id,
@@ -56,7 +56,7 @@ module.exports = function (Speaker) {
                 let speakersResult = speakersList.map((speaker) => {
                     const speakerName = speaker.name.toLowerCase();
                     const speakerSessionsCount = sessions.filter((session) => {
-                        return session.speakers ? session.speakers.map((speakerEntry) => speakerEntry.toLowerCase()).indexOf(speakerName) > -1 : false;
+                        return session.speakers ? session.speakers.map((speakerEntry) => speakerEntry.name.toLowerCase()).indexOf(speakerName) > -1 : false;
                     }).length;
 
                     return {
