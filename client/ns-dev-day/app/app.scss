@@ -125,3 +125,16 @@ ActionBar .action-bar-title {
 .session-details-content {
     padding: 10;
 }
+
+.tweet-entry {
+    padding: 10;
+    border-bottom-width: 2;
+    border-bottom-color: lightskyblue;
+    margin-bottom: 5;
+
+    Image {
+        border-radius: 50;
+        height: 80%;
+        width: 80%;
+    }
+}
