@@ -35,14 +35,11 @@
     "dataSource": "db",
     "public": false
   },
-  "Message": {
-    "dataSource": null
-  },
   "session": {
     "dataSource": null,
     "public": true
   },
-  "lecturer": {
+  "speaker": {
     "dataSource": null,
     "public": true
   }

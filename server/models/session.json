@@ -6,8 +6,10 @@
     "validateUpsert": true
   },
   "properties": {
-    "lecturer": {
-      "type": [ "string" ],
+    "speakers": {
+      "type": [
+        "string"
+      ],
       "required": false
     },
     "time": {

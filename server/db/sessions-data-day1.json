@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Registration",
-        "time": "2017-09-18T08:30:00-04:00",
+        "time": "2017-09-18T08:30:00",
         "length": 60
     },
     {
@@ -11,7 +11,7 @@
         "lecturer": [
             "Todd Anglin"
         ],
-        "time": "2017-09-18T09:30:00-04:00",
+        "time": "2017-09-18T09:30:00",
         "length": 60
     },
     {
@@ -20,7 +20,7 @@
         "lecturer": [
             "Rob Lauer"
         ],
-        "time": "2017-09-18T10:30:00-04:00",
+        "time": "2017-09-18T10:30:00",
         "length": 40,
         "description": "So you want to build native mobile apps for iOS and Android, with JavaScript? You’ve certainly come to the right place. In this talk, we will cover how we got to where we are today with NativeScript, take a brief look at some competing frameworks, and show you how to build a simple NativeScript app from scratch. You’ll learn how to use the skills of a web developer (JavaScript, CSS, and a tag-based markup language) to create truly native cross-platform apps from one codebase."
     },
@@ -30,7 +30,7 @@
         "lecturer": [
             "TJ VanToll"
         ],
-        "time": "2017-09-18T10:30:00-04:00",
+        "time": "2017-09-18T10:30:00",
         "length": 40,
         "description": "NativeScript UI is a set of free and premium user interface components for building powerful interactions in your apps. In this session you’ll learn what the components are, how they work, and some of the fun things you can do with them in your apps. Come to learn more about building charts, graphs, forms, and more 📊"
     },
@@ -41,7 +41,7 @@
             "Rob Lauer",
             "Sebastian Witalec"
         ],
-        "time": "2017-09-18T11:20:00-04:00",
+        "time": "2017-09-18T11:20:00",
         "length": 40,
         "description": "Whether you are a die-hard command-line developer or prefer the ease of point-and-click visual tooling solutions, NativeScript has your back. In this session you’ll learn how to use the most important features of the NativeScript CLI. We will also dive into some new visual tooling offerings and see how they can supplement (and sometimes replace) functionality provided by the CLI."
     },
@@ -51,14 +51,14 @@
         "lecturer": [
             "Jen Looper"
         ],
-        "time": "2017-09-18T11:20:00-04:00",
+        "time": "2017-09-18T11:20:00",
         "length": 40,
         "description": "You’ve written a great NativeScript app that is fast and looks pretty. But it needs something a little extra to get noticed in the stores. Why not go the extra mile and send your app back to school? In this session, you’ll learn about three ways to make your app a little ‘smarter’:  able to perceive its physical surroundings and able to leverage its data more efficiently. We’ll take the QuickNoms recipe app and enhance it with a sensor integration and two methods of adding Machine Learning to take a simple recipe app and turn it into something much more interesting."
     },
     {
         "id": 7,
         "name": "Lunch",
-        "time": "2017-09-18T12:00:00-04:00",
+        "time": "2017-09-18T12:00:00",
         "length": 60
     }
 ]
