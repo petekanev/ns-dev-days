@@ -23,5 +23,34 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {
+    "get": {
+      "accepts": [
+        {
+          "arg": "speakerId",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "speaker",
+        "type": "object"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getAll": {
+      "accepts": [],
+      "returns": {
+        "arg": "speakers",
+        "type": "object[]"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
 }

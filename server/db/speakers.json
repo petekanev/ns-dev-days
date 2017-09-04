@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "NATHANAEL ANDERSON",
+        "bio": "Nathanael has been developing software for over 20 years in a wide range of industries. He’s currently a senior partner of nStudio, LLC where he helps build solutions for many types of applications (native, web, mobile and hybrid)."
+    },
+    {
+        "id": 2,
+        "name": "TODD ANGLIN",
+        "bio": "Todd Anglin is Chief Evangelist and Vice President of Developer Relations at Progress (PRGS), a global provider of tools and platforms for web, desktop and mobile application development."
+    },
+    {
+        "id": 3,
+        "name": "VASIL CHIMEV",
+        "bio": "Vasil is a Software Quality Assurance Engineer at Progress. He has experience in automation and DevOps domains, as well as in web, desktop, and mobile technologies."
+    },
+    {
+        "id": 4,
+        "name": "PETER KANEV",
+        "bio": "Peter is a Software Engineer at Progress specializing in Android development for NativeScript. He has experience in JavaScript, Java, Node.js, and C#."
+    },
+    {
+        "id": 5,
+        "name": "ROB LAVERTY",
+        "bio": "Software Developer at GetHuman, building native apps since high school, obsessed with NativeScript, able to bring Redis into almost any conversation"
+    },
+    {
+        "id": 6,
+        "name": "ROB LAUER",
+        "bio": "Rob Lauer is Senior Manager of Developer Relations at Progress and has a passion for mobile app development and the open web."
+    },
+    {
+        "id": 7,
+        "name": "TRACY LEE",
+        "bio": "Tracy is a Google Developer Expert, JavaScript developer, and serial entrepreneur. Tracy is the creator of This.JavaScript, ng-cruise, Modern.Web podcast, RxWorkshop and Contributor Days and the Co-Founder of This Dot Labs."
+    },
+    {
+        "id": 8,
+        "name": "JEN LOOPER",
+        "bio": "Jen Looper is a Boston-based web and mobile developer and developer advocate at Progress specializing in cross-platform educational and fitness apps for iOS, Android, Nook, Kindle, and Windows phone."
+    },
+    {
+        "id": 9,
+        "name": "BRAD MARTIN",
+        "bio": "Brad Martin is a co-founder of nStudio LLC and developer with Nastek National. Brad has 4 years of experience developing with C#, JavaScript and TypeScript."
+    },
+    {
+        "id": 10,
+        "name": "NIC RABOY",
+        "bio": "Nic Raboy is an advocate of modern web and mobile development technologies. He has experience in Java, JavaScript, Golang and a variety of frameworks such as Angular, NativeScript, and Apache Cordova."
+    },
+    {
+        "id": 11,
+        "name": "SVETOSLAV TSENOV",
+        "bio": "Svetoslav Tsenov is a Senior Software Quality Assurance Engineer at Progress and {N} core team member with experience in automation of mobile and desktop technologies and developing applications with JavaScript, Typescript and C#."
+    },
+    {
+        "id": 12,
+        "name": "TJ VANTOLL",
+        "bio": "TJ VanToll is a front-end developer, author, and a Principal Developer Advocate for Progress. TJ has over a decade of web development experience, including a few years working on the jQuery team."
+    },
+    {
+        "id": 13,
+        "name": "STANIMIRA VLAEVA",
+        "bio": "Stanimira is a Sofia-based Software Engineer at Progress and NativeScript core team member specializing in Angular integration and the NativeScript Webpack story."
+    },
+    {
+        "id": 14,
+        "name": "NATHAN WALKER",
+        "bio": "Co-founder of nStudio LLC and developer with Tryon Creek Software, Nathan brings 15+ years of development experience. He aims to combine an artistic vision backed by a pragmatic business mind atop a love for NativeScript and Angular."
+    },
+    {
+        "id": 15,
+        "name": "JEFF WHELPLEY",
+        "bio": "CTO at GetHuman, Google Developer Expert (GDE), Boston AI Meetup co-organizer, Boston Angular Meetup co-organizer, co-creator of Angular Universal, creator of Preboot.js, former host of AngularAir."
+    },
+    {
+        "id": 16,
+        "name": "SEBASTIAN WITALEC",
+        "bio": "Sebastian Witalec is a Solution Engineer and a Technical Evangelist for Progress with over 6 years of experience in software engineering and architecture."
+    },
+    {
+        "id": 17,
+        "name": "DANIEL ZEN",
+        "bio": "Daniel Zen teaches his course material on a regular basis to Fortune 500 companies. He speaks at numerous conferences, founded the AngularNYC meetup, and co-produces the BuzzJS conference."
+    },
+    {
+        "id": 18,
+        "name": "ALEX ZISKIND",
+        "bio": "Alex Ziskind consistently strives to be on the cutting edge of technology. His Washington DC based company, Nuvious, has been architecting and implementing cloud and mobile solutions for enterprises and startups all over the world."
+    }
+]

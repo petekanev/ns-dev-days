@@ -21,7 +21,7 @@ export class SessionViewModel extends Observable {
         http.getJSON(WEB_SERVER_DOMAIN + "/get?sessionId=" + sessionId).then((res: any) => {
             const jsonRes = JSON.parse(res.session);
 
-            that.set("sessionEntry", new SessionEntry(jsonRes.id, jsonRes.name, new Date(jsonRes.time), jsonRes.length, jsonRes.lecturer, jsonRes.description));
+            that.set("sessionEntry", new SessionEntry(jsonRes.id, jsonRes.name, new Date(jsonRes.time), jsonRes.length, jsonRes.speakers, jsonRes.description));
 
         }, (err) => {
             alert("Couldn't access web server: " + JSON.stringify(err));

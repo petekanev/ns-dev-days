@@ -8,7 +8,7 @@
     {
         "id": 2,
         "name": "Opening Keynote",
-        "lecturer": [
+        "speakers": [
             "Todd Anglin"
         ],
         "time": "2017-09-18T09:30:00",
@@ -17,7 +17,7 @@
     {
         "id": 3,
         "name": "GETTING STARTED WITH {N} PART 1—LEARNING THE BASICS",
-        "lecturer": [
+        "speakers": [
             "Rob Lauer"
         ],
         "time": "2017-09-18T10:30:00",
@@ -27,7 +27,7 @@
     {
         "id": 4,
         "name": "NATIVESCRIPT UI—BEYOND THE BASICS",
-        "lecturer": [
+        "speakers": [
             "TJ VanToll"
         ],
         "time": "2017-09-18T10:30:00",
@@ -37,7 +37,7 @@
     {
         "id": 5,
         "name": "GETTING STARTED WITH {N} PART 2—BUILDING WITH THE {N} CLI AND VISUAL TOOLING",
-        "lecturer": [
+        "speakers": [
             "Rob Lauer",
             "Sebastian Witalec"
         ],
@@ -48,7 +48,7 @@
     {
         "id": 6,
         "name": "3 WAYS TO MAKE YOUR APP SMARTER",
-        "lecturer": [
+        "speakers": [
             "Jen Looper"
         ],
         "time": "2017-09-18T11:20:00",
