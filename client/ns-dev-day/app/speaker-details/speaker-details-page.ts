@@ -3,7 +3,9 @@ import { RadSideDrawer } from "nativescript-telerik-ui/sidedrawer";
 import { topmost } from "ui/frame";
 import { NavigatedData, Page } from "ui/page";
 
-import { FeaturedViewModel } from "./featured-view-model";
+import { SpeakerDetailsViewModel } from "./speaker-details-view-model";
+
+let viewModel: SpeakerDetailsViewModel;
 
 /* ***********************************************************
 * Use the "onNavigatingTo" handler to initialize the page binding context.
@@ -19,7 +21,10 @@ export function onNavigatingTo(args: NavigatedData) {
     }
 
     const page = <Page>args.object;
-    page.bindingContext = new FeaturedViewModel();
+    const speakerId = args.context.speakerId;
+    const speakerName = args.context.speakerName;
+    viewModel = new SpeakerDetailsViewModel(speakerId, speakerName);
+    page.bindingContext = viewModel;
 }
 
 /* ***********************************************************
@@ -28,6 +33,29 @@ export function onNavigatingTo(args: NavigatedData) {
 * use the showDrawer() function to open the app drawer section.
 *************************************************************/
 export function onDrawerButtonTap(args: EventData) {
-    const sideDrawer = <RadSideDrawer>topmost().getViewById("sideDrawer");
-    sideDrawer.showDrawer();
+    topmost().goBack();
+}
+
+export function onItemTap(args) {
+    const index = args.index;
+    const session: any = viewModel.get("speakerEntry").sessions[index];
+
+    if (!session) {
+        alert("Something went terribly wrong :(");
+        return;
+    }
+
+    var navEntry = {
+        moduleName: "session/session-page",
+        context: {
+            "sessionId": session.id,
+            "sessionName": session.name
+        },
+        animated: true,
+        transition: {
+            name: "curl"
+        }
+    };
+
+    topmost().navigate(navEntry);
 }

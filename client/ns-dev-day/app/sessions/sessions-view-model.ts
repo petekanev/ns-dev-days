@@ -2,10 +2,9 @@ import { Observable } from "data/observable";
 import { ObservableArray } from "data/observable-array";
 import * as http from "http";
 import { SessionEntry } from "../shared/sessions/sessions-entry";
+import { Constants } from "../shared/constants";
 
-const WEB_SERVER_DOMAIN = "http://10.0.2.2:3000/api/sessions"
 const monthsArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
 
 export class SessionsViewModel extends Observable {
     public sessionsList: ObservableArray<any>;
@@ -15,7 +14,7 @@ export class SessionsViewModel extends Observable {
 
         this.sessionsList = new ObservableArray<SessionEntry>();
         const that = this;
-        http.getJSON(WEB_SERVER_DOMAIN + "/getAll").then((res: any) => {
+        http.getJSON(Constants.WEB_SERVER_DOMAIN + "sessions/getAll").then((res: any) => {
             const jsonRes = JSON.parse(res.sessions)
             if (jsonRes.length > 0) {
                 jsonRes.forEach((element: any) => {

@@ -2,8 +2,6 @@ import { Observable } from "data/observable";
 import { ObservableArray } from "data/observable-array";
 import { request, HttpRequestOptions } from "http";
 
-
-
 export class TweetsViewModel extends Observable {
    static NSTweets: ObservableArray<Tweet> = new ObservableArray();
 

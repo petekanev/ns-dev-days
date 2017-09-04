@@ -2,8 +2,7 @@ import { Observable } from "data/observable";
 import { ObservableArray } from "data/observable-array";
 import * as http from "http";
 import { SessionEntry } from "../shared/sessions/sessions-entry";
-
-const WEB_SERVER_DOMAIN = "http://10.0.2.2:3000/api/sessions";
+import { Constants } from "../shared/constants";
 
 export class SessionViewModel extends Observable {
     public sessionId: number;
@@ -16,9 +15,8 @@ export class SessionViewModel extends Observable {
         this.sessionId = sessionId;
         this.sessionName = sessionName;
 
-        // this.sessionsList = new ObservableArray<SessionEntry>();
         const that = this;
-        http.getJSON(WEB_SERVER_DOMAIN + "/get?sessionId=" + sessionId).then((res: any) => {
+        http.getJSON(Constants.WEB_SERVER_DOMAIN + "sessions/get?sessionId=" + sessionId).then((res: any) => {
             const jsonRes = JSON.parse(res.session);
 
             that.set("sessionEntry", new SessionEntry(jsonRes.id, jsonRes.name, new Date(jsonRes.time), jsonRes.length, jsonRes.speakers, jsonRes.description));

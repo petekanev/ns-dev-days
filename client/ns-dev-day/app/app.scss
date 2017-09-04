@@ -138,3 +138,58 @@ ActionBar .action-bar-title {
         width: 80%;
     }
 }
+
+.speaker-entry {
+    padding: 10;
+    margin-bottom: 10;
+    height: 7%;
+
+    Image {
+        vertical-align: middle
+    }
+
+    .speaker-name {
+        font-weight: bold;
+        font-size: 16;
+        text-transform: capitalize;
+        vertical-align: bottom;
+        padding-left: 10; 
+    }
+
+    .speaker-sessionsCount {
+        vertical-align: top;
+        padding-left: 10;
+    }
+}
+
+.speaker-details-content {
+    padding: 10;
+
+    Image {
+        vertical-align: center;
+    }
+
+    .speaker-name {
+        font-weight: bold;
+        font-size: 18;
+        text-transform: capitalize;
+        vertical-align: center;
+        padding-left: 15;
+    }
+
+    .sessions-list {
+        margin-bottom: 10;
+        font-size: 16;
+
+        Label {
+            text-transform: capitalize;
+        }
+    }
+
+    .speaker-bio-description {
+        font-size: 15;
+        font-weight: bold;
+        margin-top: 10;
+        line-height: 4;
+    }
+}
