@@ -23,10 +23,9 @@ export function onNavigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
     const sessionId = args.context.sessionId;
     const sessionName = args.context.sessionName;
+    
     viewModel = new SessionViewModel(sessionId, sessionName);
     page.bindingContext = viewModel;
-
-    const navContext = args.context;
 }
 
 /* ***********************************************************
@@ -36,4 +35,30 @@ export function onNavigatingTo(args: NavigatedData) {
 *************************************************************/
 export function onDrawerButtonTap(args: EventData) {
     topmost().goBack();
+}
+
+export function onItemTap(args) {
+    const index = args.index;
+    const speaker: any = viewModel.get("sessionEntry").speakers[index];
+
+    debugger;
+
+    if (!speaker) {
+        alert("Something went terribly wrong :(");
+        return;
+    }
+
+    var navEntry = {
+        moduleName: "speaker-details/speaker-details-page",
+        context: {
+            "speakerId": speaker.id,
+            "speakerName": speaker.name
+        },
+        animated: true,
+        transition: {
+            name: "curl"
+        }
+    };
+
+    topmost().navigate(navEntry);
 }

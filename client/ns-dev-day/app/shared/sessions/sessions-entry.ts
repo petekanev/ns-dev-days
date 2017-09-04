@@ -7,7 +7,7 @@ export class SessionEntry {
     public timeString: string;
     public dayString: string;
     public name: string;
-    public speakers: string[];
+    public speakers: any[];
     public duration: string;
     public description?: string;
     public endTimeString?: string;
@@ -18,7 +18,7 @@ export class SessionEntry {
     constructor(id?: number, name?, time?: Date, duration?, speakers?, description?: string) {
         this.id = id || -1;
         this.name = name || "";
-        this.timeString = time ? time.getHours() + ":" + (time.getMinutes() === 0 ? "00" : time.getMinutes()) : "";
+        this.timeString = time ? time.getUTCHours() + ":" + (time.getUTCMinutes() === 0 ? "00" : time.getUTCMinutes()) : "";
         this.dayString = time ? monthsArr[time.getUTCMonth()] + " " + time.getUTCDate() : "";
         this.duration = duration + " mins";
         this.speakers = speakers || [];

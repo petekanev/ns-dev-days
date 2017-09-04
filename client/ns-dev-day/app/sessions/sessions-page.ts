@@ -37,7 +37,6 @@ export function onDrawerButtonTap(args: EventData) {
     sideDrawer.showDrawer();
 }
 
-
 export function onSessionTap(args) {
     const index = args.index;
     const session: SessionEntry = viewModel.get("sessionsList").getItem(index);
