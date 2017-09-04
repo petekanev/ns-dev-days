@@ -1,1 +1,170 @@
-[]
+[
+    {
+        "id": 14,
+        "name": "VENUE OPENS",
+        "time": "2017-09-19T08:30:00",
+        "length": 45
+    },
+    {
+        "id": 15,
+        "name": "Opening Remarks",
+        "time": "2017-09-19T09:15:00",
+        "length": 15
+    },
+    {
+        "id": 16,
+        "name": "Optimizing startup time of NativeScript Angular apps",
+        "speakers": [
+            {
+                "id": 13,
+                "name": "Stanimira Vlaeva"
+            }
+        ],
+        "time": "2017-09-19T09:30:00",
+        "length": 30,
+        "description": "Performance is a dreaded part of app development. This is particularly true for mobile apps where the expectations are high. We’ll explore a few methods for improving startup time for NativeScript Angular projects. Live demo included. Topics include: Lazy Loading; Webpack; AoT compilation; Minification and tree-shaking; V8 heap snapshots; Profiling startup time;"
+    },
+    {
+        "id": 17,
+        "name": "Mastering NativeScript Layouts",
+        "speakers": [
+            {
+                "id": 9,
+                "name": "Brad Martin"
+            }
+        ],
+        "time": "2017-09-19T10:00:00",
+        "length": 30,
+        "description": "How to Recreate Any Mobile Design with Optimal Performance. The core layouts for NativeScript are powerful and mobile UI layouts can be challenging. I’ve been doing NS layouts for a long time and have struggled to master the concepts and now you don’t have to. In this session you’ll learn some tips & tricks as we recreate popular mobile apps like Facebook and Twitter using NativeScript layouts."
+    },
+    {
+        "id": 18,
+        "name": "Morning Break",
+        "time": "2017-09-19T10:30:00",
+        "length": 30
+    },
+    {
+        "id": 19,
+        "name": "Fall in Love with Native APIS",
+        "speakers": [
+            {
+                "id": 5,
+                "name": "Rob Laverty"
+            }
+        ],
+        "time": "2017-09-19T11:00:00",
+        "length": 30,
+        "description": "The NativeScript APIs are awesome, but there is a lot of power in learning and using the Native iOS and Android APIs. One of the coolest parts of NativeScript is that it exposes all of this awesomeness in JavaScript without any plugins or additional interfaces. In this talk, Rob will go over his favorite tips and tricks."
+    },
+    {
+        "id": 20,
+        "name": "The Power of RxJS (in Nativescript and Angular)",
+        "speakers": [
+            {
+                "id": 7,
+                "name": "Tracy Lee"
+            }
+        ],
+        "time": "2017-09-19T11:30:00",
+        "length": 30,
+        "description": "Learn the importance of RxJS, simple implementation, and how to think reactively. Why is reactive programming the way of the future? What is in store with TC39 specs and reactive programming? Demonstrations of RxJS in nativescript and Angular wrapping APIs in Observables and how to easily refactor your code to use RxJS."
+    },
+    {
+        "id": 21,
+        "name": "Performance from the trenches",
+        "speakers": [
+            {
+                "id": 1,
+                "name": "Nathanael Anderson"
+            }
+        ],
+        "time": "2017-09-19T12:00:00",
+        "length": 30,
+        "description": "Tips and techniques on performance"
+    },
+    {
+        "id": 22,
+        "name": "Lunch",
+        "time": "2017-09-19T12:30:00",
+        "length": 60
+    },
+    {
+        "id": 23,
+        "name": "Native to Hybrid and Back Again",
+        "speakers": [
+            {
+                "id": 10,
+                "name": "Nic Raboy"
+            }
+        ],
+        "time": "2017-09-19T13:30:00",
+        "length": 30,
+        "description": "There are many ways to develop mobile applications for your organization. You can use Java with the Android SDK to develop Android applications, Objective-C or Swift with Xcode for iOS applications, or you can adventure into the realm of cross-platform development using common web technologies like JavaScript, Angular, and React. Not every solution to mobile application development is considered equal. Learn why I went from native development with Java to hybrid development with Ionic Framework and back to native development with NativeScript through examples and personal stories."
+    },
+    {
+        "id": 24,
+        "name": "Chrome DevTools in NativeScript",
+        "speakers": [
+            {
+                "id": 4,
+                "name": "Peter Kanev"
+            }
+        ],
+        "time": "2017-09-19T14:00:00",
+        "length": 30,
+        "description": "Whether you are a seasoned developer or a rookie, you’ll eventually stumble upon your application acting strangely. But you are a web developer, you are used to console.logging variables until the source of the problem became evident. What if there was an easier, and more efficient way to get there? We’ll explore a buggy app, locate bugs, and debug it, thanks to Chrome DevTools."
+    },
+    {
+        "id": 25,
+        "name": "Afternoon Break",
+        "time": "2017-09-19T14:30:00",
+        "length": 30
+    },
+    {
+        "id": 26,
+        "name": "The art of Mobile App Interaction",
+        "speakers": [
+            {
+                "id": 18,
+                "name": "Alex Ziskind"
+            }
+        ],
+        "time": "2017-09-19T15:00:00",
+        "length": 30,
+        "description": "Most mobile application development effort is focused on getting the business case solved as quickly and efficiently as possible. User interaction is often overlooked and any animations are considered superfluous. In this session, Alex will share with you guidelines on user interaction, how they should be baked right into your mobile application, and provide examples to do just that, built the NativeScript way. Considering a user’s interaction with your application should no longer be an afterthought."
+    },
+    {
+        "id": 27,
+        "name": "Introduction to Mobile UI Test Automation",
+        "speakers": [
+            {
+                "id": 3,
+                "name": "Vasil Chimev"
+            },
+            {
+                "id": 11,
+                "name": "Svetoslav Tsenov"
+            }
+        ],
+        "time": "2017-09-19T15:30:00",
+        "length": 30,
+        "description": "Mobile test automation is hard, but, in many cases, functional UI testing is inevitable for a mobile application. In this session we’ll learn how to easily create functional UI tests with a single code base for both Android and iOS using the nativescript-dev-appium plugin in JavaScript. In addition, we’re going to shed the light on how the core team tests the NativeScript framework and details on the open source functional testing framework we develop, maintain and use for guaranteeing quality of the NativeScript."
+    },
+    {
+        "id": 28,
+        "name": "AMA - NativeScript Panel",
+        "speakers": [
+            {
+                "id": 2,
+                "name": "Todd Anglin"
+            },
+            {
+                "id": 12,
+                "name": "TJ VanToll"
+            }
+        ],
+        "time": "2017-09-19T16:00:00",
+        "length": 30,
+        "description": "Representatives from the NativeScript team will take your questions."
+    }
+]

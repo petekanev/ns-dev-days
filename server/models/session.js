@@ -5,7 +5,7 @@ const sessionsDay1 = require("../db/sessions-data-day1.json") || [];
 const sessionsDay2 = require("../db/sessions-data-day2.json") || [];
 const sessions = sessionsDay1.concat(sessionsDay2);
 
-const SESSIONS_DAY2_STARTING_ID = 8;
+const SESSIONS_DAY2_STARTING_ID = 14;
 
 module.exports = (Session) => {
     Session.get = (sessionId, cb) => {
