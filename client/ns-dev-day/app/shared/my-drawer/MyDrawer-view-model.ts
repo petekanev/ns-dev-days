@@ -43,17 +43,18 @@ export class MyDrawerViewModel extends Observable {
                 icon: "\uf099",
                 isSelected: selectedPage === "#NativeScript"
             },
+            // TODO: Replace with actual pages when implemented
             {
                 title: "Sponsors",
                 name: "sponsors",
-                route: "sponsors/sponsors-page",
+                route: "home/home-page",
                 icon: "\uf0a4",
                 isSelected: selectedPage === "Event Info"
             },
             {
                 title: "Event Info",
                 name: "info",
-                route: "info/info-page",
+                route: "home/home-page",
                 icon: "\uf129",
                 isSelected: selectedPage === "Event Info"
             }
