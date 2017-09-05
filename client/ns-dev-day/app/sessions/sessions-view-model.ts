@@ -8,9 +8,12 @@ const monthsArr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"
 
 export class SessionsViewModel extends Observable {
     public sessionsList: ObservableArray<any>;
+    public isLoading: boolean;
 
     constructor() {
         super();
+
+        this.isLoading = true;
 
         this.sessionsList = new ObservableArray<SessionEntry>();
         const that = this;
@@ -19,6 +22,7 @@ export class SessionsViewModel extends Observable {
             if (jsonRes.length > 0) {
                 jsonRes.forEach((element: any) => {
                     that.sessionsList.push(new SessionEntry(element.id, element.name, new Date(element.time), element.length, element.speakers));
+                    that.set("isLoading", false);
                 });
             }
         }, (err) => {

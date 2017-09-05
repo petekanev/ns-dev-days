@@ -193,3 +193,12 @@ ActionBar .action-bar-title {
         line-height: 4;
     }
 }
+
+.dimmer {
+    background-color: rgba(111, 111, 111, 0.5)
+}
+
+ActivityIndicator {
+    height: 50%;
+    width: 50%;
+}

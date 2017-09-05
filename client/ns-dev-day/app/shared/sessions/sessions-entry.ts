@@ -25,9 +25,9 @@ export class SessionEntry {
         this.description = description || "";
 
         if (time) {
-            let endDate = new Date(time.setMinutes(time.getMinutes() + duration || 0));
+            let endDate = new Date(time.setMinutes(time.getUTCMinutes() + duration || 0));
 
-            this.endTimeString = time ? endDate.getHours() + ":" + (endDate.getMinutes() === 0 ? "00" : endDate.getMinutes()) : "";
+            this.endTimeString = time ? endDate.getUTCHours() + ":" + (endDate.getUTCMinutes() === 0 ? "00" : endDate.getUTCMinutes()) : "";
             this.dayOfTheWeek = daysArr[time.getDay()];
         }
 
