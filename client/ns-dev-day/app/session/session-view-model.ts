@@ -18,13 +18,15 @@ export class SessionViewModel extends Observable {
         this.isLoading = true;
 
         const that = this;
-        http.getJSON(Constants.WEB_SERVER_DOMAIN + "sessions/get?sessionId=" + sessionId).then((res: any) => {
-            const jsonRes = JSON.parse(res.session);
+        debugger;
+        http.getJSON(Constants.WEB_SERVER_DOMAIN + "sessions/get?sessionId=" + sessionId)
+            .then((res: any) => {
+                const jsonRes = JSON.parse(res.session);
 
-            that.set("sessionEntry", new SessionEntry(jsonRes.id, jsonRes.name, new Date(jsonRes.time), jsonRes.length, jsonRes.speakers, jsonRes.description));
-            that.set("isLoading", false);
-        }, (err) => {
-            alert("Couldn't access web server: " + JSON.stringify(err));
-        }).catch((rej) => { console.log("Rejected: " + rej) });
+                that.set("sessionEntry", new SessionEntry(jsonRes.id, jsonRes.name, new Date(jsonRes.time), jsonRes.length, jsonRes.speakers, jsonRes.description));
+                that.set("isLoading", false);
+            }, (err) => {
+                alert("Couldn't access web server: " + JSON.stringify(err));
+            }).catch((rej) => { console.log("Rejected: " + rej) });
     }
 }
