@@ -34,17 +34,17 @@ export class TweetsViewModel extends Observable {
 
         TweetsViewModel.mockTweets.forEach(tweet => TweetsViewModel.NSTweets.push(tweet));
 
-        // request(requestOptions).then((res) => {
-        //     if (res.statusCode >= 200 && res.statusCode < 400) {
-
-        //     } else {
-        //         alert("Failed fetching Twitter statuses. Code: " + res.statusCode);
-        //     }
-        // }, (rej) => {
-        //     alert("Failed to make request to Twitter API. " + rej);
-        // }).catch((err) => {
-        //     alert("Failed to make request to Twitter API. " + err);
-        // });
+        request(requestOptions).then((res) => {
+            if (res.statusCode >= 200 && res.statusCode < 400) {
+                debugger;
+            } else {
+                alert("Failed fetching Twitter statuses. Code: " + res.statusCode);
+            }
+        }, (rej) => {
+            alert("Failed to make request to Twitter API. " + rej);
+        }).catch((err) => {
+            alert("Failed to make request to Twitter API. " + err);
+        });
     }
 
     get tweets() {
